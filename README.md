@@ -3,6 +3,11 @@ Global Counter
 
 Easy to use counter for various people, any person can connect to your server and count people, eggs, and open source projects if you want.
 
+###To run:
+ - Just type : 
+   -"npm install"
+   -"npm start" in the root folder
+
 ###Made thinking on:
 
  - People that need to control capacity of one space with more than one access that doesn't have automatic control.
