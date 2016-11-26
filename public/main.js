@@ -14,12 +14,12 @@ socket.on('count', function (data){   // make the connection and read the "count
 
 
 function addcount(){
-     socket.emit('newcount',parseInt(document.getElementById('conteo').innerHTML) + 1) ; //add +1 to the count variable from the front and send to the back
+     socket.emit('add');
      return false; //prevent infinite sends
 }    
     
 function lesscount(){
-     socket.emit('newcount',parseInt(document.getElementById('conteo').innerHTML) - 1) ; // -1 to the count variable from front (html) and send to the back
+     socket.emit('less',parseInt(document.getElementById('conteo').innerHTML) - 1) ; // -1 to the count variable from front (html) and send to the back
      return false; // prevent infinite sends
 }     
 
@@ -27,7 +27,7 @@ function putzero(){
     
     var response = confirm("This will put the counter to 0, ARE YOU SURE?");
     if (response == true) {
-      socket.emit('newcount', 0) ; // puts count to 0, and send the value to the back (in back count=0)
+      socket.emit('zero') ; // puts count to 0, and send the value to the back (in back count=0)
       return false; // prevent infinite sends
    } 
      

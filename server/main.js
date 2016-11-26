@@ -18,10 +18,15 @@ app.use(express.static('public')); // access to the front from express
 io.on('connection',function(socket){  // all the websocket logic from server, inside this function
     console.log('Cliente conectado'); // just for know how many connections
     socket.emit('count',count);       // send first count (=0) to the front
-    socket.on('newcount',function (data){ // this (data) came from server and will change count
-    count = data;                       // if came from + button its count++ if came from less count-- if putzero count=0
-    io.sockets.emit('count',count);     // send the count with updated value from previous line
-})
+    socket.on('add',function (){ // this (data) came from server and will change count
+    io.sockets.emit('count',++count);                             // if came from + button its count++ if came from less count-- if putzero count=0
+    })
+    socket.on('less',function (){ // this (data) came from server and will change count
+    io.sockets.emit('count',--count);                             // if came from + button its count++ if came from less count-- if putzero count=0
+    })
+    socket.on('zero',function (){ // this (data) came from server and will change count
+    io.sockets.emit('count',0);                             // if came from + button its count++ if came from less count-- if putzero count=0
+    })
 })
 
 
@@ -29,3 +34,4 @@ io.on('connection',function(socket){  // all the websocket logic from server, in
 server.listen(8080, function(){                      //
     console.log("Servidor corriendo " +ipdelserver); //  Tell us the server is running and the ip
 });
+
