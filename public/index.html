@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador en tiempo real</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+          
+      <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+</head>
+<body>
+    
+        
+           <h1 style ="padding-top:15%; font-size:1000%;"class="center-align" id="conteo"></h1>
+    
+        
+            </br>
+    <div class="row container">
+        <div class="col s12">
+    <button style="width:100%;height:100%;" class="waves-effect waves-light btn-large" onClick="addcount()"> + </button>
+    </br>
+    </br>
+    
+    <button style="width:100%;height:100%;" class="waves-effect waves-light btn-large" onClick="lesscount()"> - </button>
+    </br>
+    </br>
+    </br>
+    <div class="row">
+        <div class="col s6 offset-s4">
+    <button style="width:70%;height:50%;" class="waves-effect waves-light btn-large red accent-1" onClick="putzero()"> Restart </button>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
