@@ -8,9 +8,14 @@ socket.on('count', function (data){   // make the connection and read the "count
     
 });
 
+var addListenToAdd = document.getElementById("add"); 
+  addListenToAdd.addEventListener("click", function(){addcount()});
 
+var addListenToLess = document.getElementById("less"); 
+  addListenToLess.addEventListener("click", function(){lesscount()});
 
-
+var addListenToZero = document.getElementById("zero"); 
+  addListenToZero.addEventListener("click", function(){putzero()});
 
 
 function addcount(){
