@@ -1,19 +1,13 @@
 {
-  "name": "workspace",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon server/main.js"
-  },
+  "name": "Global Count",
+  "version": "1.69.69",
+  "description": "Synchronized counter for various team members",
+  "main": "main.js",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Josheriff from OpenSource Weekends",
+  "license": "free but not earn money with this... (searching terms)",
   "dependencies": {
     "express": "4.14.0",
     "socket.io": "1.6.0"
-  },
-  "devDependencies": {
-    "nodemon": "1.11.0"
-  }
+  }  
 }
