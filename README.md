@@ -43,4 +43,5 @@ Or you can contact us directly...
 
 - [Ulises Gascón](https://github.com/ulisesGascon)
 - [Carlos Hernandez](https://github.com/codingcarlos)
-- [Jose Manuel Gallego]("https://github.com/Josheriff)
+- [Jose Manuel Gallego](https://github.com/Josheriff)
+- [Ignacio Villanueva] (https://github.com/IgnaciodeNuevo)
