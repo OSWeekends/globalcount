@@ -9,6 +9,13 @@ Easy to use counter for various people, any person can connect to your server an
  - node main (to run the server)
  - Remember to change the ip variable to your server address
 
+###Important note:
+ - If one or vairus clients go offline but has the html rendered
+ the app will update the status when come back offline, you can keep
+ using the + and - keys and will send to the server when back online again
+ - If the server go offline, and operators keep pressing the + and - keys
+ it will update too when back online. 
+
 ###Made thinking on:
 
  - People that need to control capacity of one space with more than one access that doesn't have automatic control.
