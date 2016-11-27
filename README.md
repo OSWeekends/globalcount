@@ -5,8 +5,9 @@ Easy to use counter for various people, any person can connect to your server an
 
 ###To run:
  - Just type : 
-   -"npm install"
-   -"npm start" in the root folder
+   - "npm install"
+ - node main (to run the server)
+ - Remember to change the ip variable to your server address
 
 ###Made thinking on:
 
