@@ -1,6 +1,6 @@
 var ipdelserver = "https://gowebtutorial-josheriff.c9users.io:8080/"; // ipserver in variable for changing in every server you want tu run
 
-var socket = io.connect(ipdelserver,{'forceNew':true}); // declares de socket var necessary to stablish a connection later
+var socket = io.connect(ipdelserver); // declares de socket var necessary to stablish a connection later
 
 socket.on('count', function (data){   // make the connection and read the "count" event (first one is 0, later will change from front to back and front again)
     console.log(data);
