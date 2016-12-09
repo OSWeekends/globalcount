@@ -1,8 +1,8 @@
 {
-  "name": "Global Count",
-  "version": "1.0",
+  "name": "Global-Count",
+  "version": "1.0.1",
   "description": "Synchronized counter for various team members",
-  "main": "main.js",
+  "main": "./main.js",
   "keywords": [],
   "author": "Josheriff from OpenSource Weekends",
   "license": "MIT",
