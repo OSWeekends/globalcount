@@ -1,4 +1,4 @@
-var ipdelserver = "https://gowebtutorial-josheriff.c9users.io:8080/"; // ipserver in variable for changing in every server you want tu run
+var ipdelserver = "http://localhost:8080/"; // ipserver in variable for changing in every server you want tu run
 
 var socket = io.connect(ipdelserver); // declares de socket var necessary to stablish a connection later
 
