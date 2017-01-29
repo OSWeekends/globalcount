@@ -3,7 +3,7 @@ var app = express();                       //    dependencias
 var server = require('http').Server(app);  //
 var io = require('socket.io')(server);     //
 
-var ipdelserver = "https://gowebtutorial-josheriff.c9users.io/"; // server address as variable 
+var ipdelserver = "https://gowebtutorial-josheriff.c9users.io/"; // server address as variable
                                                                  // for re-use in different servers
 var count = 0 ; // the most important variable of the app, future create object for different counters
 
@@ -20,19 +20,18 @@ io.on('connection',function(socket){  // all the websocket logic from server, in
     socket.emit('count',count);       // send first count (=0) to the front
     socket.on('add',function (){ // this (data) came from server and will change count
     io.sockets.emit('count',++count);                             // if came from + button its count++ if came from less count-- if putzero count=0
-    })
+});
     socket.on('less',function (){ // this (data) came from server and will change count
     io.sockets.emit('count',--count);                             // if came from + button its count++ if came from less count-- if putzero count=0
-    })
+});
     socket.on('zero',function (){ // this (data) came from server and will change count
     count = 0;
     io.sockets.emit('count',0);                             // if came from + button its count++ if came from less count-- if putzero count=0
-    })
-})
+});
+});
 
 
 
 server.listen(8080, function(){                      //
     console.log("Servidor corriendo " +ipdelserver); //  Tell us the server is running and the ip
 });
-
