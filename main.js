@@ -34,5 +34,5 @@ io.on('connection',function(socket){  // all the websocket logic from server, in
 
 
 server.listen(port, function(){                      //
-    console.log("Servidor corriendo en "); //  Tell us the server is running and the ip
+    console.log("Servidor corriendo en", port); //  Tell us the server is running and the ip
 });
