@@ -2,8 +2,9 @@ var express = require ('express');         // Declarando las
 var app = express();                       //    dependencias
 var server = require('http').Server(app);  //
 var io = require('socket.io')(server);     //
+var port = process.env.PORT || 3000;
 
-var ipdelserver = "https://gowebtutorial-josheriff.c9users.io/"; // server address as variable
+//var ipdelserver = "https://gowebtutorial-josheriff.c9users.io/"; // server address as variable
                                                                  // for re-use in different servers
 var count = 0 ; // the most important variable of the app, future create object for different counters
 
@@ -32,6 +33,6 @@ io.on('connection',function(socket){  // all the websocket logic from server, in
 
 
 
-server.listen(8080, function(){                      //
-    console.log("Servidor corriendo " +ipdelserver); //  Tell us the server is running and the ip
+server.listen(port, function(){                      //
+    console.log("Servidor corriendo en", port); //  Tell us the server is running and the ip
 });
